@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* Hide scrollbar for clean mobile look but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
