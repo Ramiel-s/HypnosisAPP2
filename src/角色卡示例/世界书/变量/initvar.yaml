@@ -1,4 +1,8 @@
 # yaml-language-server: $schema=../../schema.json
+<<<<<<< HEAD
+=======
+# 在编写 initvar 之前, 请先保证终端有在运行 `pnpm watch`, 这会生成 schema.json 用于检验 initvar 是否有效
+>>>>>>> 170141cb8741287228b58218d6c0f3b5196ecdf6
 世界:
   当前时间: 2024-04-08 10:45
   当前地点: 私立风祭学院 高中部 2年A班教室
