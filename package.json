@@ -88,7 +88,10 @@
     "jqueryui": "^1.11.1",
     "klona": "^2.0.6",
     "lodash": "^4.17.21",
+<<<<<<< HEAD
     "lucide-react": "^0.562.0",
+=======
+>>>>>>> 77bb1b89597f225cde547babb33ff2d9af028c76
     "pinia": "^3.0.4",
     "pixi.js": "^8.14.3",
     "react": "^19.2.3",

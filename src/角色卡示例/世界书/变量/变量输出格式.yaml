@@ -2,19 +2,34 @@
 变量输出格式:
   rule:
     - you must output the update analysis and the actual update commands in the end of the next reply
+<<<<<<< HEAD
     - 'the update commands must strictly follow the **JSON Patch (RFC 6902)** standard, but can only use the following operations: `replace` (replace the value of existing paths), `add` (only used to insert new items into an object or array), `remove`; that is, the output must be a valid JSON array containing operation objects'
     - don't update field names starts with `_` as they are readonly, such as `_变量`
   format: |-
     <UpdateVariable>
     </Analysis>$(IN ENGLISH, no more than 80 words)
+=======
+    - 'the update commands must strictly follow the **JSON Patch (RFC 6902)** standard, but can only use the following operations: `replace` (replace the value of existing paths), `add` (insert new items into an object or array, "value" should be the result value instead of the delta value), `remove`; that is, the output must be a valid JSON array containing operation objects'
+    - don't update field names starts with `_` as they are readonly, such as `_变量`
+  format: |-
+    <UpdateVariable>
+    <Analysis>$(IN ENGLISH, no more than 80 words)
+>>>>>>> 77bb1b89597f225cde547babb33ff2d9af028c76
     - ${calculate time passed: ...}
     - ${decide whether dramatic updates are allowed as it's in a special case or the time passed is more than usual: yes/no}
     - ${analyze every variable based on its corresponding `check`, according only to current reply instead of previous plots: ...}
     </Analysis>
+<<<<<<< HEAD
     </JSONPatch>
     [
       { "op": "replace", "path": "${/path/to/variable}", "value": "${new_value}" },
       { "op": "add", "path": "${/path/to/object/newKey}", "value": "${content}" }
+=======
+    <JSONPatch>
+    [
+      { "op": "replace", "path": "${/path/to/variable}", "value": "${new_value}" },
+      { "op": "add", "path": "${/path/to/object/new_key}", "value": "${new_value}" }
+>>>>>>> 77bb1b89597f225cde547babb33ff2d9af028c76
       { "op": "remove", "path": "${/path/to/array/0}" },
       ...
     ]
