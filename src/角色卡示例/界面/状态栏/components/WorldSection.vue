@@ -20,7 +20,11 @@
 
 <script setup lang="ts">
 import _ from 'lodash';
+<<<<<<< HEAD
 import { useDataStore } from '../../store';
+=======
+import { useDataStore } from '../store';
+>>>>>>> 0bdc075ba63105824b4f4f433b4720e2310f6138
 
 const store = useDataStore();
 
